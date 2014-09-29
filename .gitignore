@@ -52,3 +52,7 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+
+.idea/scopes/scope_settings.xml
+
+.idea/workspace.xml
