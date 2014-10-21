@@ -1,8 +1,8 @@
 from couchbase import Couchbase
-from sklearn.externals import joblib
 from sklearn.neural_network import BernoulliRBM
 from sklearn.svm import SVC
-import numpy as np
+#from sklearn.externals import joblib
+#import numpy as np
 #import joblib
 
 def run_cpu_mem():
