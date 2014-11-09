@@ -6,7 +6,7 @@ from sklearn.svm import SVC
 #import joblib
 
 def run_cpu_mem():
-    cb = Couchbase.connect(bucket='ex_ml',  host='localhost')
+    cb = Couchbase.connect(bucket='examiner',  host='localhost')
 
     rows = cb.query("get", "fit_cpu_mem")
 
@@ -205,6 +205,8 @@ def exec_rbm_svc(x_fit, y_fit, x_virus, run_name):
 
     print run_name + " (correct): " + `correct` + "/" + `total` + " = " + `pos`
     print run_name + " (wrong): " + `wrong` + "/" + `total` + " = " + `neg`
+
+run_cpu_mem()
 
 #def run_rbm_svc(file_name_x, file_name_y, file_name_vir, out_file_vir, run_name):
 #	raw_fit_x = joblib.load(file_name_x)
